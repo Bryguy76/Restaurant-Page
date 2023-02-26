@@ -2,7 +2,7 @@
 
 import room from './assets/dining_room.jpg';
 
-export default function pageLoader(content) {
+export function pageLoader(content) {
   //Create Title
   const restarantHeader = document.createElement('h1');
   const restarantName = document.createTextNode("Bourgeois'");
@@ -34,7 +34,7 @@ export default function pageLoader(content) {
   menuButton.appendChild(menuText);
   contactButton.appendChild(contactText);
   homeButton.classList.add('selected');
-  homeButton.classList.add('menuButton');
+  homeButton.classList.add('homeButton');
   menuButton.classList.add('menuButton');
   contactButton.classList.add('contactButton');
   //Create 'pinner'
@@ -49,4 +49,11 @@ export default function pageLoader(content) {
   const contentArea = document.createElement('div');
   contentArea.classList.add('contentArea');
   pinner.appendChild(contentArea);
+  //Add footer
+  const footer = document.createElement('footer');
+  const footerPara = document.createElement('p');
+  const footerText = document.createTextNode('Copyright Lucid Design 2023');
+  footerPara.appendChild(footerText);
+  footer.appendChild(footerPara);
+  content.appendChild(footer);
 }
