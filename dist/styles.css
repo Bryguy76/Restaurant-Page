@@ -54,6 +54,7 @@ button:hover {
 
 img {
   width: 50vw;
+  border-radius: 15px;
 }
 
 .pinner {
@@ -91,4 +92,7 @@ footer {
 .menuPic {
   width: 15vw;
   margin: 0 auto;
+  border-radius: 5px;
+  border: 2px solid azure;
+  margin-top: 2rem;
 }
