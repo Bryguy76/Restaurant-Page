@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+  background-color: #123;
+  color: azure;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurantHeader {
+  font-size: 7rem;
+  font-weight: bold;
+  color: azure;
+  font-family: 'Zeyada', cursive;
+  padding-bottom: 2rem;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul > li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  background: none;
+  font-size: 30px;
+  color: azure;
+}
+
+.selected {
+  border-bottom: 3px solid azure;
+}
+
+button:hover {
+  cursor: pointer;
+  border-bottom: 3px solid azure;
+}
+
+img {
+  width: 50vw;
+}
