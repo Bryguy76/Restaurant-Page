@@ -6,6 +6,7 @@ pancakePic.src = pancake;
 burgerPic.src = burger;
 pancakePic.classList.add('menuPic');
 burgerPic.classList.add('menuPic');
+
 export function menuContent(contentArea) {
   const para1 = document.createElement('p');
   const pancakePrice = document.createTextNode('pancakes - 12');
