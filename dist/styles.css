@@ -87,3 +87,8 @@ footer {
   font-size: 4px;
   font-style: italic;
 }
+
+.menuPic {
+  width: 15vw;
+  margin: 0 auto;
+}
