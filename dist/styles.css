@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
 body {
   background-color: #123;
   color: azure;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #content {
@@ -52,4 +54,20 @@ button:hover {
 
 img {
   width: 50vw;
+}
+
+.pinner {
+  position: relative;
+}
+
+.contentArea {
+  background-color: rgb(255, 255, 255, 0.3);
+  width: 50vw;
+  min-height: 65vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: auto;
 }

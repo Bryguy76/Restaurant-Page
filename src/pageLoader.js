@@ -34,7 +34,19 @@ export default function pageLoader(content) {
   menuButton.appendChild(menuText);
   contactButton.appendChild(contactText);
   homeButton.classList.add('selected');
+  homeButton.classList.add('menuButton');
+  menuButton.classList.add('menuButton');
+  contactButton.classList.add('contactButton');
+  //Create 'pinner'
+  const pinner = document.createElement('div');
+  pinner.classList.add('pinner');
+  content.appendChild(pinner);
+  //Add backbround picture
   const roomPic = new Image();
   roomPic.src = room;
-  content.appendChild(roomPic);
+  pinner.appendChild(roomPic);
+  //Add content area
+  const contentArea = document.createElement('div');
+  contentArea.classList.add('contentArea');
+  pinner.appendChild(contentArea);
 }
